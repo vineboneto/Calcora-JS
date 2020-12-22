@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'">
+    <link rel="stylesheet" href="./src/assets/styles/global.css">
+    <title>Calcora</title>
+</head>
+<body>
+    <div id="root">
+        <main>
+            <input 
+            type="text" 
+            id="incoming" 
+            placeholder="12:00" 
+            pattern="(1[0-2]|0[1-9])\/(1[5-9]|2\d)"
+            />
+            <input type="text" id="coming" placeholder="18:00" />
+            <input type="text" id="result" readonly />
+        </main>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

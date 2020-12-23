@@ -10,13 +10,26 @@
 <body>
     <div id="root">
         <main>
-            <input 
-            type="text" 
-            id="incoming" 
-            placeholder="00:00"
-            />
-            <input type="text" id="coming" placeholder="00:00" />
-            <input type="text" id="result" readonly />
+            <div class="input-block">
+                <label for="incoming">Saída</label>
+                <input 
+                    type="text" 
+                    id="incoming" 
+                    placeholder="00:00"
+                    />
+            </div>
+            <div class="input-block">
+                <label for="coming">Chegada</label>
+                <input 
+                    type="text" 
+                    id="coming" 
+                    placeholder="00:00"
+                />
+            </div>
+            <div class="input-block">
+                <label for="result">Tempo total</label>
+                <input type="text" id="result" readonly />
+            </div>
         </main>
     </div>
 

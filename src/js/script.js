@@ -2,17 +2,17 @@ let incoming = document.getElementById('incoming')
 let coming = document.getElementById('coming')
 let result  = document.getElementById('result')
 
+clear(incoming)
+clear(coming)
 hourMinutesMaks(incoming)
 hourMinutesMaks(coming)
 
-clear(incoming)
-clear(coming)
-
-
 function clear(input) {
-    input.addEventListener('change', (event) => {
-        if (input.value === '') result.value = ''
-
+    input.addEventListener('input', (event) => {
+        if (input.value.match(/(\d{2})(\d{2})/) == null && input.value.length >= 4) {
+            input.value = ''
+            result.value = ''
+        }
     })
 
     input.addEventListener('focus', (event) => {

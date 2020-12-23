@@ -1,4 +1,4 @@
-const { app, BrowserWindow, ipcMain } = require('electron')
+const { app, BrowserWindow, Menu } = require('electron')
 
 let mainWindow
 
@@ -12,4 +12,5 @@ app.on('ready', () => {
     })
     mainWindow.loadURL(`file://${__dirname}/index.html`)
     mainWindow.on('closed', () =>  mainWindow = null)
+    Menu.setApplicationMenu(null)
 })

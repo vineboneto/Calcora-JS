@@ -4,8 +4,8 @@ let result  = document.getElementById('result')
 
 clear(incoming)
 clear(coming)
-hourMinutesMaks(incoming)
-hourMinutesMaks(coming)
+hourMinutesMasks(incoming)
+hourMinutesMasks(coming)
 
 function clear(input) {
     input.addEventListener('input', (event) => {
@@ -21,7 +21,7 @@ function clear(input) {
     })
 }
 
-function hourMinutesMaks (input)  {
+function hourMinutesMasks (input)  {
     input.addEventListener('keyup', (event) => {
         event.currentTarget.maxLength = 5
         let value = event.currentTarget.value

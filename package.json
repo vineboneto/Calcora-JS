@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "electron index.js"
+    "start": "electron index.js",
+    "build": "electron-builder"
   },
   "license": "MIT",
-  "dependencies": {
+  "devDependencies": {
     "electron": "^11.1.1",
     "electron-builder": "^22.9.1"
   }

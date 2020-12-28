@@ -4,11 +4,17 @@
   "main": "index.js",
   "scripts": {
     "start": "electron index.js",
-    "build": "electron-builder"
+    "build": "electron-builder build"
   },
   "license": "MIT",
   "devDependencies": {
     "electron": "^11.1.1",
     "electron-builder": "^22.9.1"
+  },
+  "build": {
+    "productName": "Calcora",
+    "win":{
+      "icon": "./src/assets/images/app.png" 
+    }
   }
 }
